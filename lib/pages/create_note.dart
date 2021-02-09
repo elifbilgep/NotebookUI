@@ -19,6 +19,7 @@ class _CreateNoteState extends State<CreateNote> {
       floatingActionButton: Padding(
         padding: const EdgeInsets.all(8.0),
         child: FloatingActionButton(
+          onPressed: () {},
           backgroundColor: Colors.white,
           elevation: 5,
           child: Icon(
