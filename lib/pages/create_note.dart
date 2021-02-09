@@ -15,55 +15,56 @@ class _CreateNoteState extends State<CreateNote> {
   @override
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
-    return Scaffold(
-      floatingActionButton: Padding(
-        padding: const EdgeInsets.all(8.0),
-        child: FloatingActionButton(
-          onPressed: () {},
-          backgroundColor: Colors.white,
-          elevation: 5,
-          child: Icon(
-            Icons.save,
-            color: Colors.grey.shade700,
+    return SafeArea(
+          child: SafeArea(
+        child: Scaffold(
+          floatingActionButton: Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: FloatingActionButton(
+              onPressed: () {},
+              backgroundColor: Colors.white,
+              elevation: 5,
+              child: Icon(
+                Icons.save,
+                color: Colors.grey.shade700,
+              ),
+            ),
+          ),
+          resizeToAvoidBottomInset: false,
+          backgroundColor: scaffoldColor,
+          body: Column(
+            children: [
+              buildAppBar(size),
+              buildTitleFormField(size),
+              buildFormField(size),
+            ],
           ),
         ),
-      ),
-      resizeToAvoidBottomInset: false,
-      backgroundColor: scaffoldColor,
-      body: Column(
-        children: [
-          buildAppBar(size),
-          buildTitleFormField(size),
-          buildFormField(size),
-        ],
       ),
     );
   }
 
   Widget buildAppBar(Size size) {
-    return Padding(
-      padding: EdgeInsets.only(top: size.width * 0.08),
-      child: Container(
-        height: 50,
-        width: size.width,
-        color: Colors.grey.shade100,
-        child: Row(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          children: [
-            Padding(
-              padding: const EdgeInsets.only(left: 8.0),
-              child: Icon(
-                Icons.close_outlined,
-                size: 40,
-                color: Colors.grey.shade400,
-              ),
+    return Container(
+      height: 50,
+      width: size.width,
+      color: Colors.grey.shade100,
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        children: [
+          Padding(
+            padding: const EdgeInsets.only(left: 8.0),
+            child: Icon(
+              Icons.close_outlined,
+              size: 40,
+              color: Colors.grey.shade400,
             ),
-            dropDown(),
-            SizedBox(
-              width: 20,
-            )
-          ],
-        ),
+          ),
+          dropDown(),
+          SizedBox(
+            width: 20,
+          )
+        ],
       ),
     );
   }

@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primaryColor: Colors.grey.shade600,
       ),
-      home: Settings(),
+      home: Notes_Page(),
     );
   }
 }

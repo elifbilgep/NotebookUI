@@ -120,7 +120,6 @@ class _Notes_PageState extends State<Notes_Page> {
               SizedBox(
                 height: 20,
               ),
-              
             ],
           );
         });
