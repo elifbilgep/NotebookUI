@@ -121,7 +121,7 @@ class HomePage extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
             Text(
-              "Categories",
+              "Recent Notes",
               style: headerStyle2,
             ),
             Row(

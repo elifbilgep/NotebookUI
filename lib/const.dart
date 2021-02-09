@@ -24,6 +24,30 @@ var headerStyle5 = TextStyle(
     color: Colors.grey.shade800,
     fontWeight: FontWeight.bold);
 
+var headerStyle6 =
+    TextStyle(fontFamily: "Aileron", fontSize: 50, color: Colors.white);
+
+var headerStyle7 = TextStyle(
+    fontFamily: "Aileron", fontSize: 15, color: Colors.white.withOpacity(0.7));
+
+var headerStyle8 = TextStyle(
+    fontFamily: "Aileron",
+    fontSize: 15,
+    color: Colors.white.withOpacity(0.7),
+    fontWeight: FontWeight.bold);
+
+var headerStyle9 = TextStyle(
+    fontFamily: "Aileron",
+    fontSize: 20,
+    color: Colors.white.withOpacity(0.7),
+    fontWeight: FontWeight.bold);
+
+var headerStyle10 = TextStyle(
+    fontFamily: "Aileron",
+    fontSize: 15,
+    color: Colors.grey.shade500,
+    fontWeight: FontWeight.bold);
+
 var scaffoldColor = Color.fromRGBO(239, 239, 239, 1);
 
 Color generalColor = Color.fromRGBO(176, 140, 249, 1);
