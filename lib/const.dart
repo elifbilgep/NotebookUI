@@ -48,6 +48,18 @@ var headerStyle10 = TextStyle(
     color: Colors.grey.shade500,
     fontWeight: FontWeight.bold);
 
+var headerStyle11 = TextStyle(
+    fontFamily: "Aileron",
+    fontSize: 18,
+    color: Colors.grey.shade100,
+    fontWeight: FontWeight.w100);
+
+var headerStyle12 = TextStyle(
+    fontFamily: "Aileron",
+    fontSize: 15,
+    color: Colors.grey.shade100,
+    fontWeight: FontWeight.w100);
+
 var scaffoldColor = Color.fromRGBO(239, 239, 239, 1);
 
 Color generalColor = Color.fromRGBO(176, 140, 249, 1);

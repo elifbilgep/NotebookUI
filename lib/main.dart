@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:hakki_tasarim/pages/create_note.dart';
+import 'package:hakki_tasarim/pages/login.dart';
 import 'package:hakki_tasarim/pages/note_page.dart';
 
 import 'pages/home.dart';
@@ -16,7 +17,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primaryColor: Colors.grey.shade600,
       ),
-      home: Notes_Page(),
+      home: LoginPage(),
     );
   }
 }
