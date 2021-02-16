@@ -14,3 +14,9 @@ List categoriesColor = [
   Color.fromRGBO(253, 191, 255, 1),
   Color.fromRGBO(211, 238, 251, 1)
 ];
+
+List priorty = ["Advanced", "Medium", "Low"];
+
+var priortyW = ["Priorty"];
+
+List dates = ["01/02/2020","21/03/2021","01/03/2021"];

@@ -15,6 +15,18 @@ var headerStyle3 = TextStyle(
     fontWeight: FontWeight.bold,
     color: Colors.grey.shade800);
 
+var headerStyle3_1 = TextStyle(
+    fontFamily: "Aileron",
+    fontSize: 20,
+    fontWeight: FontWeight.bold,
+    color: Colors.grey.shade500);
+
+var headerStyle3_2 = TextStyle(
+    fontFamily: "Aileron",
+    fontSize: 14,
+    fontWeight: FontWeight.bold,
+    color: Colors.grey.shade700);
+
 var headerStyle4 =
     TextStyle(fontFamily: "Aileron", fontSize: 15, color: Colors.grey.shade700);
 

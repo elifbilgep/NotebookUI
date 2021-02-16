@@ -15,9 +15,9 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Projem',
       theme: ThemeData(
-        primaryColor: Colors.grey.shade600,
+        primarySwatch: Colors.grey,
       ),
-      home: LoginPage(),
+      home: Notes_Page(),
     );
   }
 }

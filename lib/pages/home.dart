@@ -165,9 +165,20 @@ class HomePage extends StatelessWidget {
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Text(
-                          "${notlarBaslik[index]}",
-                          style: headerStyle5,
+                        Row(
+                          children: [
+                            Text(
+                              "${notlarBaslik[index]}",
+                              style: headerStyle5,
+                            ),
+                            SizedBox(
+                              width: 10,
+                            ),
+                            Text(
+                              dates[index].toString(),
+                              style: headerStyle3_2,
+                            )
+                          ],
                         ),
                         SizedBox(
                           height: 3,

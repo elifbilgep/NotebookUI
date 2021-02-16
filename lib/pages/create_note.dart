@@ -12,11 +12,12 @@ class CreateNote extends StatefulWidget {
 class _CreateNoteState extends State<CreateNote> {
   Size size;
   String dropdownValue = categories[0];
+  String priortyValue = priorty[0];
   @override
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
     return SafeArea(
-          child: SafeArea(
+      child: SafeArea(
         child: Scaffold(
           floatingActionButton: Padding(
             padding: const EdgeInsets.all(8.0),
@@ -50,7 +51,6 @@ class _CreateNoteState extends State<CreateNote> {
       width: size.width,
       color: Colors.grey.shade100,
       child: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           Padding(
             padding: const EdgeInsets.only(left: 8.0),
@@ -60,10 +60,14 @@ class _CreateNoteState extends State<CreateNote> {
               color: Colors.grey.shade400,
             ),
           ),
+          SizedBox(
+            width: size.width * 0.25,
+          ),
           dropDown(),
           SizedBox(
-            width: 20,
-          )
+            width: size.width * 0.1,
+          ),
+          dropDownPriorty()
         ],
       ),
     );
@@ -73,7 +77,7 @@ class _CreateNoteState extends State<CreateNote> {
     return DropdownButton<String>(
       value: dropdownValue,
       icon: Icon(Icons.keyboard_arrow_down_sharp),
-      iconSize: 30,
+      iconSize: 20,
       style: TextStyle(color: Colors.deepPurple),
       underline: Container(
         height: 2,
@@ -90,6 +94,32 @@ class _CreateNoteState extends State<CreateNote> {
           child: Text(
             value,
             style: headerStyle3,
+          ),
+        );
+      }).toList(),
+    );
+  }
+
+  Widget dropDownPriorty() {
+    return DropdownButton<String>(
+      value: priortyValue,
+      icon: Icon(Icons.keyboard_arrow_down_sharp),
+      iconSize: 20,
+      style: TextStyle(color: Colors.deepPurple),
+      underline: Container(
+        color: Colors.transparent,
+      ),
+      onChanged: (String newValue) {
+        setState(() {
+          priortyValue = newValue;
+        });
+      },
+      items: priorty.map<DropdownMenuItem<String>>((dynamic value) {
+        return DropdownMenuItem<String>(
+          value: value,
+          child: Text(
+            value,
+            style: headerStyle3_1,
           ),
         );
       }).toList(),

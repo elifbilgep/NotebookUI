@@ -9,7 +9,10 @@ class Notes_Page extends StatefulWidget {
 
 class _Notes_PageState extends State<Notes_Page> {
   Size size;
-  String dropdownValue = 'One';
+  dynamic dropdownValue = 'One';
+  var dropdownValue2 = " ";
+  var bankSelected = "";
+  List list = ["Color1"];
 
   @override
   Widget build(BuildContext context) {
@@ -34,36 +37,39 @@ class _Notes_PageState extends State<Notes_Page> {
 
   Widget buildHeader(Size size) {
     return Container(
-      height: 200,
+      height: 220,
       color: categoriesColor[0],
       width: size.width,
       child: Padding(
         padding: const EdgeInsets.only(left: 10.0),
         child: Column(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            SizedBox(
-              height: 10,
-            ),
-            Icon(
-              Icons.arrow_back_ios,
-              size: 20,
-              color: Colors.white,
-            ),
-            SizedBox(
-              height: 40,
+            Padding(
+              padding: const EdgeInsets.only(left: 5.0, right: 5, top: 15),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Icon(
+                    Icons.arrow_back_ios,
+                    size: 20,
+                    color: Colors.white,
+                  ),
+                ],
+              ),
             ),
             Text(
               "General",
               style: headerStyle6,
             ),
-            SizedBox(
-              height: 20,
+            Padding(
+              padding: const EdgeInsets.only(bottom: 8.0),
+              child: Text(
+                "2 notes",
+                style: headerStyle7,
+              ),
             ),
-            Text(
-              "2 notes",
-              style: headerStyle7,
-            )
           ],
         ),
       ),
