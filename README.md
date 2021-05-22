@@ -1,4 +1,4 @@
-# hakki_tasarim
+# Notebook UI Design
 
 A new Flutter project.
 
