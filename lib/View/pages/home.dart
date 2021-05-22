@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 
-import '../const.dart';
-import '../lists.dart';
+import '../../const.dart';
+import '../../lists.dart';
+
 
 class HomePage extends StatelessWidget {
   var size;
@@ -71,6 +72,7 @@ class HomePage extends StatelessWidget {
       ),
     );
   }
+
 
   Widget buildCategories(Size size) {
     return Container(

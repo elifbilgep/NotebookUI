@@ -1,10 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:hakki_tasarim/pages/create_note.dart';
-import 'package:hakki_tasarim/pages/login.dart';
-import 'package:hakki_tasarim/pages/note_page.dart';
+import 'View/pages/home.dart';
 
-import 'pages/home.dart';
-import 'pages/setting.dart';
 
 void main() => runApp(MyApp());
 
@@ -17,7 +13,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.grey,
       ),
-      home: Notes_Page(),
+      home: HomePage(),
     );
   }
 }

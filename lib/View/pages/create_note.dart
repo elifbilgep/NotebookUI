@@ -67,7 +67,7 @@ class _CreateNoteState extends State<CreateNote> {
           SizedBox(
             width: size.width * 0.1,
           ),
-          dropDownPriorty()
+          
         ],
       ),
     );
@@ -100,7 +100,7 @@ class _CreateNoteState extends State<CreateNote> {
     );
   }
 
-  Widget dropDownPriorty() {
+  /* Widget dropDownPriorty() {
     return DropdownButton<String>(
       value: priortyValue,
       icon: Icon(Icons.keyboard_arrow_down_sharp),
@@ -119,12 +119,12 @@ class _CreateNoteState extends State<CreateNote> {
           value: value,
           child: Text(
             value,
-            style: headerStyle3_1,
+            style: headerStyle3.copyWith(fontSize: 16),
           ),
         );
       }).toList(),
     );
-  }
+  } */
 
   Widget buildTitleFormField(Size size) {
     return Form(

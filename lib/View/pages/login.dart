@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
-import '../const.dart';
+import '../../const.dart';
+
+
 
 class LoginPage extends StatelessWidget {
   Size size;
